@@ -28,7 +28,7 @@ export function RegistrationFee() {
       transition={{ duration: 0.5 }}
       className='py-12'
     >
-      <h2 className='text-3xl font-bold text-purple-700 mb-4'>Registration Fee</h2>
+      <h2 className='text-3xl font-bold text-primary-700 mb-4'>Registration Fee</h2>
       <div className='overflow-x-auto'>
         <Table>
           <TableHeader>
@@ -67,14 +67,14 @@ export function RegistrationFee() {
           </p>
         </div>
 
-        <p className='text-purple-700 font-semibold'>
+        <p className='text-primary-700 font-semibold'>
           Attractive rewards will be given for Best Papers
         </p>
       </div>
 
       <Card className='mt-8'>
         <CardHeader>
-          <CardTitle className='text-xl font-semibold text-purple-700'>
+          <CardTitle className='text-xl font-semibold text-primary-700'>
             Payment Information
           </CardTitle>
         </CardHeader>

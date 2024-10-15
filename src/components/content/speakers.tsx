@@ -51,7 +51,7 @@ export function KeynoteSpeakers() {
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
   return (
-    <section className='py-12 bg-gradient-to-b from-purple-50 to-white rounded-md'>
+    <section className='py-12 bg-gradient-to-b from-primary-50 to-white rounded-md'>
       <motion.div
         ref={sectionRef}
         initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ export function KeynoteSpeakers() {
         transition={{ duration: 0.5 }}
         className='container mx-auto px-4'
       >
-        <h2 className='text-4xl font-bold text-purple-700 mb-12 text-center'>Keynote Speakers</h2>
+        <h2 className='text-4xl font-bold text-primary-700 mb-12 text-center'>Keynote Speakers</h2>
 
         <div className='space-y-8'>
           {speakers.map((speaker, index) => (
@@ -76,11 +76,11 @@ export function KeynoteSpeakers() {
                   alt={speaker.name}
                   width={150}
                   height={150}
-                  className='rounded-full object-cover border-4 border-purple-200'
+                  className='rounded-full object-cover border-4 border-primary-200'
                 />
               </div>
               <div className='md:w-3/4 md:pl-6'>
-                <h3 className='text-2xl font-bold text-purple-700 mb-2'>{speaker.name}</h3>
+                <h3 className='text-2xl font-bold text-primary-700 mb-2'>{speaker.name}</h3>
                 <p className='text-lg text-gray-700 mb-1'>{speaker.title}</p>
                 <p className='text-md text-gray-600 mb-3'>{speaker.affiliation}</p>
                 {speaker.topic && (

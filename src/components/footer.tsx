@@ -12,7 +12,7 @@ export function Footer() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className='bg-purple-900 text-white py-12'
+      className='bg-primary-900 text-white py-12'
     >
       <div className='container mx-auto px-4'>
         <motion.div
@@ -42,22 +42,22 @@ export function Footer() {
             <h3 className='text-xl font-bold mb-4'>Quick Links</h3>
             <ul className='space-y-2'>
               <li>
-                <Link href='/' className='hover:text-purple-300 transition-colors'>
+                <Link href='/' className='hover:text-primary-300 transition-colors'>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href='/about' className='hover:text-purple-300 transition-colors'>
+                <Link href='/about' className='hover:text-primary-300 transition-colors'>
                   About
                 </Link>
               </li>
               <li>
-                <Link href='/registration' className='hover:text-purple-300 transition-colors'>
+                <Link href='/registration' className='hover:text-primary-300 transition-colors'>
                   Registration
                 </Link>
               </li>
               <li>
-                <Link href='/contact' className='hover:text-purple-300 transition-colors'>
+                <Link href='/contact' className='hover:text-primary-300 transition-colors'>
                   Contact
                 </Link>
               </li>
@@ -85,19 +85,19 @@ export function Footer() {
               }}
             >
               <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                <Link href='#' className='hover:text-purple-300 transition-colors'>
+                <Link href='#' className='hover:text-primary-300 transition-colors'>
                   <Facebook size={20} />
                   <span className='sr-only'>Facebook</span>
                 </Link>
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                <Link href='#' className='hover:text-purple-300 transition-colors'>
+                <Link href='#' className='hover:text-primary-300 transition-colors'>
                   <Twitter size={20} />
                   <span className='sr-only'>Twitter</span>
                 </Link>
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                <Link href='#' className='hover:text-purple-300 transition-colors'>
+                <Link href='#' className='hover:text-primary-300 transition-colors'>
                   <Linkedin size={20} />
                   <span className='sr-only'>LinkedIn</span>
                 </Link>
@@ -105,7 +105,7 @@ export function Footer() {
               <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
                 <Link
                   href='mailto:chennai.icvit@vit.ac.in'
-                  className='hover:text-purple-300 transition-colors'
+                  className='hover:text-primary-300 transition-colors'
                 >
                   <Mail size={20} />
                   <span className='sr-only'>Email</span>
@@ -118,7 +118,7 @@ export function Footer() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className='mt-8 pt-8 border-t border-purple-700 text-center'
+          className='mt-8 pt-8 border-t border-primary-700 text-center'
         >
           <p className='text-sm'>&copy; {currentYear} ICVIT'25. All rights reserved.</p>
         </motion.div>

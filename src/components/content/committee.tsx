@@ -114,14 +114,14 @@ export function ConferenceCommittee() {
       transition={{ duration: 0.5 }}
       className='py-12 space-y-8'
     >
-      <h1 className='text-4xl font-bold text-purple-700 text-center'>Conference Committee</h1>
+      <h1 className='text-4xl font-bold text-primary-700 text-center'>Conference Committee</h1>
       <Tabs defaultValue='General Committee' className='w-full'>
         <TabsList className='flex flex-wrap justify-center gap-2 mb-6 bg-transparent'>
           {Object.keys(committeeData).map((committee) => (
             <TabsTrigger
               key={committee}
               value={committee}
-              className='px-4 py-2 text-sm font-medium rounded-full transition-colors duration-200 ease-in-out hover:bg-purple-100 data-[state=active]:bg-purple-200 data-[state=active]:text-purple-800'
+              className='px-4 py-2 text-sm font-medium rounded-full transition-colors duration-200 ease-in-out hover:bg-primary-100 data-[state=active]:bg-primary-200 data-[state=active]:text-primary-800'
             >
               {committee}
             </TabsTrigger>
@@ -144,10 +144,10 @@ export function ConferenceCommittee() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                         transition={{ duration: 0.3, delay: index * 0.1 }}
-                        className='p-4 rounded-lg transition-all duration-200 ease-in-out hover:bg-purple-100 hover:shadow-md border border-purple-200'
+                        className='p-4 rounded-lg transition-all duration-200 ease-in-out hover:bg-primary-100 hover:shadow-md border border-primary-200'
                       >
                         <div className='text-base md:text-lg'>
-                          <span className='font-semibold text-purple-700'>{member.name}</span>
+                          <span className='font-semibold text-primary-700'>{member.name}</span>
                           {member.title && (
                             <span className='text-gray-600 ml-2 text-sm md:text-base'>
                               • {member.title}

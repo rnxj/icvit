@@ -130,7 +130,7 @@ export function About() {
           <CardContent className='p-6'>
             <div className='flex flex-col md:flex-row gap-6 items-center'>
               <div className='md:w-2/3'>
-                <h2 className='text-3xl font-bold text-purple-700 mb-4'>About VIT</h2>
+                <h2 className='text-3xl font-bold text-primary-700 mb-4'>About VIT</h2>
                 <p className='mb-4 text-gray-700'>
                   VIT Chennai is a globally engaged, competitive research enriched campus,
                   strategically located in a city that is one of the biggest automotive and IT hubs
@@ -167,11 +167,11 @@ export function About() {
         animate={isInView2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <h2 className='text-3xl font-bold text-purple-700 mb-6'>Association Partners</h2>
+        <h2 className='text-3xl font-bold text-primary-700 mb-6'>Association Partners</h2>
         {associationPartners.map((partner, index) => (
           <Card key={index} className='mb-6'>
             <CardHeader>
-              <CardTitle className='text-2xl text-purple-700'>{partner.name}</CardTitle>
+              <CardTitle className='text-2xl text-primary-700'>{partner.name}</CardTitle>
             </CardHeader>
             <CardContent>
               <div className='flex flex-col md:flex-row gap-6'>
@@ -207,7 +207,7 @@ export function About() {
       >
         <Card>
           <CardHeader>
-            <CardTitle className='text-3xl font-bold text-purple-700'>
+            <CardTitle className='text-3xl font-bold text-primary-700'>
               About the Conference
             </CardTitle>
           </CardHeader>
@@ -238,7 +238,7 @@ export function About() {
       >
         <Card>
           <CardHeader>
-            <CardTitle className='text-3xl font-bold text-purple-700'>
+            <CardTitle className='text-3xl font-bold text-primary-700'>
               Conference Objectives
             </CardTitle>
           </CardHeader>
@@ -263,11 +263,11 @@ export function About() {
         animate={isInView5 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.5, delay: 0.8 }}
       >
-        <h2 className='text-3xl font-bold text-purple-700 mb-6'>Conference Tracks</h2>
+        <h2 className='text-3xl font-bold text-primary-700 mb-6'>Conference Tracks</h2>
         <Accordion type='single' collapsible className='w-full'>
           {conferenceTracks.map((track, index) => (
             <AccordionItem key={index} value={`track-${index}`}>
-              <AccordionTrigger className='text-xl font-semibold text-purple-700'>
+              <AccordionTrigger className='text-xl font-semibold text-primary-700'>
                 {track.title}
               </AccordionTrigger>
               <AccordionContent>
@@ -294,7 +294,7 @@ export function About() {
           <CardContent className='p-6'>
             <div className='flex flex-col md:flex-row gap-6 items-center'>
               <div className='md:w-2/3'>
-                <h2 className='text-3xl font-bold text-purple-700 mb-4'>Publishing & Indexing</h2>
+                <h2 className='text-3xl font-bold text-primary-700 mb-4'>Publishing & Indexing</h2>
                 <p className='mb-4 text-gray-700'>
                   ICVIT&apos;25 proceedings are planned to be published with Springer in their
                   Communications in Computer and Information Science series (final approval

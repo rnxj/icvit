@@ -60,7 +60,7 @@ export function Header() {
             DST - SERB, New Delhi Sponsored
           </Badge>
 
-          <h1 className='text-2xl font-bold text-purple-800 leading-tight'>
+          <h1 className='text-2xl font-bold text-primary-800 leading-tight'>
             1st International Conference on adVanced Intelligent Technologies (ICVIT'25)
           </h1>
 
@@ -72,7 +72,7 @@ export function Header() {
           <Card>
             <CardContent className='pt-6'>
               <h3 className='text-xl font-bold mb-2'>Organized By</h3>
-              <p className='text-purple-700 font-semibold'>
+              <p className='text-primary-700 font-semibold'>
                 School of Computer Science and Engineering (SCOPE), Vellore Institute of Technology,
                 Chennai, India
               </p>
@@ -157,7 +157,7 @@ export function Header() {
           animate={isInstructionsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <h2 className='text-3xl font-bold text-purple-700 mb-8'>Instructions & Info</h2>
+          <h2 className='text-3xl font-bold text-primary-700 mb-8'>Instructions & Info</h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
             {[

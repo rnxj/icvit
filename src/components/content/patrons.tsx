@@ -77,7 +77,7 @@ export function Patrons() {
         transition={{ duration: 0.5 }}
       >
         <div className='flex flex-col items-center'>
-          <h2 className='text-3xl font-bold text-purple-700 text-center mb-4'>Chief Patron</h2>
+          <h2 className='text-3xl font-bold text-primary-700 text-center mb-4'>Chief Patron</h2>
           <Image
             src={committeeMembers.chiefPatron.imageUrl}
             alt={committeeMembers.chiefPatron.name}
@@ -85,7 +85,7 @@ export function Patrons() {
             height={250}
             className='rounded-lg mb-4'
           />
-          <h3 className='text-xl font-semibold text-purple-700'>
+          <h3 className='text-xl font-semibold text-primary-700'>
             {committeeMembers.chiefPatron.name}
           </h3>
           <p className='text-gray-600'>{committeeMembers.chiefPatron.title}</p>
@@ -100,7 +100,7 @@ export function Patrons() {
       >
         <Card>
           <CardHeader>
-            <CardTitle className='text-3xl font-bold text-purple-700 text-center'>
+            <CardTitle className='text-3xl font-bold text-primary-700 text-center'>
               Patrons
             </CardTitle>
           </CardHeader>
@@ -121,7 +121,7 @@ export function Patrons() {
                     height={200}
                     className='rounded-lg mb-4'
                   />
-                  <h3 className='text-lg font-semibold text-purple-700 text-center'>
+                  <h3 className='text-lg font-semibold text-primary-700 text-center'>
                     {patron.name}
                   </h3>
                   <p className='text-gray-600 text-center'>{patron.title}</p>

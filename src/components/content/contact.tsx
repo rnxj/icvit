@@ -26,8 +26,8 @@ export function ContactUs() {
       className='py-12'
     >
       <Card className='overflow-hidden'>
-        <CardHeader className='bg-purple-100'>
-          <CardTitle className='text-3xl font-bold text-purple-700'>Contact Us</CardTitle>
+        <CardHeader className='bg-primary-100'>
+          <CardTitle className='text-3xl font-bold text-primary-700'>Contact Us</CardTitle>
         </CardHeader>
         <CardContent className='p-6'>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
@@ -40,17 +40,17 @@ export function ContactUs() {
               className='flex flex-col space-y-6'
             >
               <div className='flex items-center space-x-4'>
-                <MailIcon className='w-6 h-6 text-purple-600' />
+                <MailIcon className='w-6 h-6 text-primary-600' />
                 <Button
                   asChild
                   variant='link'
-                  className='p-0 h-auto font-semibold text-purple-700 hover:text-purple-900'
+                  className='p-0 h-auto font-semibold text-primary-700 hover:text-primary-900'
                 >
                   <Link href='mailto:chennai.icvit@vit.ac.in'>chennai.icvit@vit.ac.in</Link>
                 </Button>
               </div>
               <div className='flex items-start space-x-4'>
-                <MapPinIcon className='w-6 h-6 text-purple-600 flex-shrink-0 mt-1' />
+                <MapPinIcon className='w-6 h-6 text-primary-600 flex-shrink-0 mt-1' />
                 <p className='text-gray-700'>
                   Vellore Institute of Technology, Vandalur - Kelambakkam Road, Chennai, Tamil Nadu
                   - 600 127

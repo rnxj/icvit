@@ -58,14 +58,14 @@ export function Submission() {
       transition={{ duration: 0.5 }}
       className='py-12 space-y-8'
     >
-      <h2 className='text-4xl font-bold text-purple-700 text-center mb-8'>
+      <h2 className='text-4xl font-bold text-primary-700 text-center mb-8'>
         ICVIT'25 Conference Paper Submission Guidelines
       </h2>
 
       <Accordion type='single' collapsible className='w-full'>
         {guidelines.map((item, index) => (
           <AccordionItem key={index} value={`item-${index}`}>
-            <AccordionTrigger className='text-xl font-semibold text-purple-700'>
+            <AccordionTrigger className='text-xl font-semibold text-primary-700'>
               {item.title}
             </AccordionTrigger>
             <AccordionContent>
@@ -77,17 +77,17 @@ export function Submission() {
 
       <Card className='mt-8'>
         <CardHeader>
-          <CardTitle className='text-2xl font-bold text-purple-700'>Submission Links</CardTitle>
+          <CardTitle className='text-2xl font-bold text-primary-700'>Submission Links</CardTitle>
         </CardHeader>
         <CardContent className='grid grid-cols-1 md:grid-cols-2 gap-4'>
           <div>
-            <h3 className='text-xl font-bold text-purple-700 mb-2'>Manuscript Submission</h3>
+            <h3 className='text-xl font-bold text-primary-700 mb-2'>Manuscript Submission</h3>
             <Button asChild>
               <Link href='#'>Submit Manuscript</Link>
             </Button>
           </div>
           <div>
-            <h3 className='text-xl font-bold text-purple-700 mb-2'>Manuscript Templates</h3>
+            <h3 className='text-xl font-bold text-primary-700 mb-2'>Manuscript Templates</h3>
             <div className='space-y-2'>
               <Button asChild variant='outline'>
                 <Link href='#'>Download Word Template</Link>
