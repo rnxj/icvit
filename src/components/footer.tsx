@@ -4,8 +4,19 @@ import { motion } from 'framer-motion';
 import { Facebook, Linkedin, Mail, Twitter } from 'lucide-react';
 import Link from 'next/link';
 
+import { navItems } from './navbar';
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <motion.footer
@@ -38,30 +49,20 @@ export function Footer() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
+            className='grid grid-cols-1 md:grid-cols-2 '
           >
-            <h3 className='text-xl font-bold mb-4'>Quick Links</h3>
-            <ul className='space-y-2'>
-              <li>
-                <Link href='/' className='hover:text-primary-300 transition-colors'>
-                  Home
+            <h3 className='text-xl font-bold mb-4 col-span-2'>Quick Links</h3>
+            {navItems.map((item, index) => (
+              <div key={item.name} className='col-span-1'>
+                <Link
+                  href={item.href}
+                  className='hover:text-primary-300 transition-colors'
+                  onClick={(e) => handleScrollToSection(e, item.href)}
+                >
+                  {item.name}
                 </Link>
-              </li>
-              <li>
-                <Link href='/about' className='hover:text-primary-300 transition-colors'>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href='/registration' className='hover:text-primary-300 transition-colors'>
-                  Registration
-                </Link>
-              </li>
-              <li>
-                <Link href='/contact' className='hover:text-primary-300 transition-colors'>
-                  Contact
-                </Link>
-              </li>
-            </ul>
+              </div>
+            ))}
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -20 }}

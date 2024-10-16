@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
-const navItems = [
+export const navItems = [
   { name: 'Home', href: '#header' },
   { name: 'About', href: '#about' },
   { name: 'Patrons', href: '#patrons' },
