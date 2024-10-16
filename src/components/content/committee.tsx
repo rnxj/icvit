@@ -116,7 +116,7 @@ export function ConferenceCommittee() {
     >
       <h1 className='text-4xl font-bold text-primary-700 text-center'>Conference Committee</h1>
       <Tabs defaultValue='General Committee' className='w-full'>
-        <TabsList className='flex flex-wrap justify-center gap-2 mb-6 bg-transparent'>
+        <TabsList className='grid grid-cols-2 lg:flex lg:flex-row w-full sm:w-auto mb-4 sm:mb-6 h-auto bg-transparent'>
           {Object.keys(committeeData).map((committee) => (
             <TabsTrigger
               key={committee}

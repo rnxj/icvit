@@ -18,7 +18,7 @@ export function Header() {
   const isInstructionsInView = useInView(instructionsRef, { once: true, amount: 0.1 });
 
   return (
-    <div className='max-w-7xl mx-auto py-12'>
+    <div className='max-w-7xl mx-auto pb-12'>
       <div className='grid grid-cols-1 lg:grid-cols-5 gap-12'>
         {/* Left Column */}
         <motion.div
