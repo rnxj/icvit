@@ -23,30 +23,30 @@ interface AssociationPartner {
 }
 
 const associationPartners: AssociationPartner[] = [
-  {
-    name: 'Universiti Putra Malaysia (UPM)',
-    description:
-      'UPM is the only university that leads in the field of agriculture, which is not limited to food crops, including animal husbandry, veterinary medicine, and forestry, in addition to exploring disciplines that are relevant to the needs of society and the country. Faculty of Computer Science and Information Technology is located next to the lake located at UPM\'s Main Gate. This faculty consists of four departments namely the Department of Computer Science, Department of Multimedia, Department of Software Engineering and Information System, and the Department of Communication Technology and Network. Faculty of Computer Science and Information Technology is the first faculty to introduce "Green IT".',
-    logoUrl: '/logos/upm.png',
-    logoAlt: 'UPM Logo',
-    readMoreLink: 'https://www.upm.edu.my/?L=en',
-  },
-  {
-    name: 'Bureau of Indian Standards (BIS)',
-    description:
-      'BIS is the National Standard Body of India established under the BIS Act 2016 for the harmonious development of the activities of standardization, marking, and quality certification of goods and for matters connected therewith or incidental thereto. BIS has been providing traceability and tangibility benefits to the national economy in a number of ways by providing safe reliable quality goods; minimizing health hazards to consumers; promoting exports and import substitutes; control over proliferation of varieties etc. through standardization, certification, and testing',
-    logoUrl: '/logos/bis.png',
-    logoAlt: 'BIS Logo',
-    readMoreLink: 'https://www.bis.gov.in/',
-  },
-  {
-    name: 'UiPath Academic Alliance',
-    description:
-      'Automation and AI offer unprecedented opportunities to innovate. UiPath enables our customers to tap into this power with our industry-leading AI-powered enterprise automation technology. We are committed to promoting and maintaining an ethical workplace, protecting our customers data, managing risks, and building ongoing stakeholder value through the practice of good governance and oversight',
-    logoUrl: '/logos/uipath.png',
-    logoAlt: 'UiPath Academic Alliance Logo',
-    readMoreLink: 'https://www.uipath.com/',
-  },
+  // {
+  //   name: 'Universiti Putra Malaysia (UPM)',
+  //   description:
+  //     'UPM is the only university that leads in the field of agriculture, which is not limited to food crops, including animal husbandry, veterinary medicine, and forestry, in addition to exploring disciplines that are relevant to the needs of society and the country. Faculty of Computer Science and Information Technology is located next to the lake located at UPM\'s Main Gate. This faculty consists of four departments namely the Department of Computer Science, Department of Multimedia, Department of Software Engineering and Information System, and the Department of Communication Technology and Network. Faculty of Computer Science and Information Technology is the first faculty to introduce "Green IT".',
+  //   logoUrl: '/logos/upm.png',
+  //   logoAlt: 'UPM Logo',
+  //   readMoreLink: 'https://www.upm.edu.my/?L=en',
+  // },
+  // {
+  //   name: 'Bureau of Indian Standards (BIS)',
+  //   description:
+  //     'BIS is the National Standard Body of India established under the BIS Act 2016 for the harmonious development of the activities of standardization, marking, and quality certification of goods and for matters connected therewith or incidental thereto. BIS has been providing traceability and tangibility benefits to the national economy in a number of ways by providing safe reliable quality goods; minimizing health hazards to consumers; promoting exports and import substitutes; control over proliferation of varieties etc. through standardization, certification, and testing',
+  //   logoUrl: '/logos/bis.png',
+  //   logoAlt: 'BIS Logo',
+  //   readMoreLink: 'https://www.bis.gov.in/',
+  // },
+  // {
+  //   name: 'UiPath Academic Alliance',
+  //   description:
+  //     'Automation and AI offer unprecedented opportunities to innovate. UiPath enables our customers to tap into this power with our industry-leading AI-powered enterprise automation technology. We are committed to promoting and maintaining an ethical workplace, protecting our customers data, managing risks, and building ongoing stakeholder value through the practice of good governance and oversight',
+  //   logoUrl: '/logos/uipath.png',
+  //   logoAlt: 'UiPath Academic Alliance Logo',
+  //   readMoreLink: 'https://www.uipath.com/',
+  // },
 ];
 
 const conferenceObjectives = [
@@ -57,48 +57,69 @@ const conferenceObjectives = [
 
 const conferenceTracks = [
   {
-    title: 'Artificial Intelligence and Machine Learning Advances',
+    title: 'Session 1: Machine Learning, Deep Learning and Generative AI',
     topics: [
-      'Deep Learning Techniques and Architectures',
-      'Reinforcement Learning and Decision-making Systems',
-      'Transfer Learning, Few-shot, and Zero-shot Learning',
-      'AI for Natural Language Processing and Understanding',
-    ],
-  },
-  {
-    title: 'Generative AI and Creative Intelligence',
-    topics: [
+      'Deep Learning Architectures and Neural Networks',
       'Generative Adversarial Networks (GANs) and Diffusion Models',
-      'Creative AI in Art, Music, and Content Generation',
-      'Applications of Generative AI with Knowledge Graphs',
-      'Generative AI for Scientific Research and Innovation',
+      'Transfer Learning and Few-shot Learning',
+      'Reinforcement Learning and Decision Making',
+      'AI for Scientific Discovery and Research',
+      'Explainable AI and Model Interpretability',
     ],
   },
   {
-    title: 'Intelligent Systems, Robotics, and Autonomous Agents',
+    title: 'Session 2: Computer Vision and Image Processing',
+    topics: [
+      'Object Detection and Recognition',
+      'Image Segmentation and Classification',
+      'Video Analysis and Processing',
+      'Medical Image Analysis',
+      '3D Computer Vision and Scene Understanding',
+      'Visual SLAM and 3D Reconstruction',
+    ],
+  },
+  {
+    title: 'Session 3: Natural Language Processing and Computational Linguistics',
+    topics: [
+      'Large Language Models and Transformers',
+      'Text Generation and Summarization',
+      'Machine Translation and Multilingual NLP',
+      'Sentiment Analysis and Opinion Mining',
+      'Question Answering Systems',
+      'Information Extraction and Retrieval',
+    ],
+  },
+  {
+    title: 'Session 4: Intelligent Systems, Robotics, and Autonomous Agents',
     topics: [
       'Robotics: Perception, Planning, and Control',
-      'Human-Robot Interaction and Collaborative Robotics',
-      'Autonomous Vehicles and Intelligent Transportation',
+      'Human-Robot Interaction',
+      'Autonomous Vehicles and Navigation',
       'Multi-agent Systems and Swarm Intelligence',
+      'Industrial Automation and Smart Manufacturing',
+      'Cognitive Robotics and AI',
     ],
   },
   {
-    title: 'Quantum Computing, Neuromorphic Computing, and Emerging Technologies',
+    title: 'Session 5: Smart Internet of Things (IoT), Edge Computing and Security',
     topics: [
-      'Quantum Algorithms and Quantum Machine Learning',
-      'Neuromorphic Computing and Brain-inspired AI',
-      'Applications of Quantum Computing in Optimization',
-      'Emerging Hardware for AI: GPUs, TPUs, and Beyond',
+      'IoT Architecture and Protocols',
+      'Edge Computing and Fog Computing',
+      'IoT Security and Privacy',
+      'Smart Cities and Infrastructure',
+      'Industrial IoT Applications',
+      'Sensor Networks and Data Analytics',
     ],
   },
   {
-    title: 'Internet of Things (IoT) and Edge Computing',
+    title: 'Session 6: Quantum Computing, Quantum AI and Applications',
     topics: [
-      'Intelligent IoT Solutions and Smart Sensors',
-      'AI at the Edge for Real-time Decision Making',
-      'IoT-based Cyber-Physical Systems',
-      'Applications of Edge Computing in Industry 4.0',
+      'Quantum Algorithms and Complexity',
+      'Quantum Machine Learning',
+      'Quantum Error Correction',
+      'Quantum Software Development',
+      'Quantum Cryptography',
+      'Hybrid Quantum-Classical Computing',
     ],
   },
 ];
@@ -167,7 +188,7 @@ export function About() {
         animate={isInView2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <h2 className='text-3xl font-bold text-primary-700 mb-6'>Association Partners</h2>
+        {/* <h2 className='text-3xl font-bold text-primary-700 mb-6'>Association Partners</h2> */}
         {associationPartners.map((partner, index) => (
           <Card key={index} className='mb-6'>
             <CardHeader>
@@ -263,11 +284,11 @@ export function About() {
         animate={isInView5 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.5, delay: 0.8 }}
       >
-        <h2 className='text-3xl font-bold text-primary-700 mb-6'>Conference Tracks</h2>
+        <h2 className='text-3xl font-bold text-primary-700 mb-6'>Conference Sessions</h2>
         <Accordion type='single' collapsible className='w-full'>
           {conferenceTracks.map((track, index) => (
             <AccordionItem key={index} value={`track-${index}`}>
-              <AccordionTrigger className='text-xl font-semibold text-primary-700'>
+              <AccordionTrigger className='text-lg font-semibold text-primary-700'>
                 {track.title}
               </AccordionTrigger>
               <AccordionContent>

@@ -16,34 +16,19 @@ import {
 
 const importantDates = [
   {
-    dates: ['3rd June 2024'],
+    dates: ['15th December 2024'],
     previouslyDecidedDates: [],
-    event: 'Call for Papers',
-  },
-  {
-    dates: ['25th September 2024 (Firm Extended)'],
-    previouslyDecidedDates: ['1st September 2024', '20th September 2024'],
     event: 'Paper Submission Deadline',
   },
   {
-    dates: ['10th October 2024 (Extended)'],
-    previouslyDecidedDates: ['30th September 2024'],
+    dates: ['10th January 2025'],
+    previouslyDecidedDates: [],
     event: 'Acceptance Notification',
   },
   {
-    dates: ['21st October 2024 (Extended)'],
-    previouslyDecidedDates: ['15th October 2024'],
-    event: 'Camera Ready Copy Submission',
-  },
-  {
-    dates: ['5th February 2025'],
+    dates: ['22nd January 2025'],
     previouslyDecidedDates: [],
-    event: 'Registration Close',
-  },
-  {
-    dates: ['14th & 15th February 2025'],
-    previouslyDecidedDates: [],
-    event: 'Conference',
+    event: 'Deadline for final papers',
   },
 ];
 

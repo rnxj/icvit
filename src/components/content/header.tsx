@@ -39,7 +39,7 @@ export function Header() {
             </Badge>
           </div>
 
-          <div className='flex flex-wrap items-center gap-6'>
+          {/* <div className='flex flex-wrap items-center gap-6'>
             <Image
               src='/logos/serb.png'
               alt='SERB Logo'
@@ -58,7 +58,7 @@ export function Header() {
 
           <Badge variant='secondary' className='text-lg py-2 px-4'>
             DST - SERB, New Delhi Sponsored
-          </Badge>
+          </Badge> */}
 
           <h1 className='text-2xl font-bold text-primary-800 leading-tight'>
             1st International Conference on adVanced Intelligent Technologies (ICVIT'25)
@@ -79,7 +79,7 @@ export function Header() {
             </CardContent>
           </Card>
 
-          <Card>
+          {/* <Card>
             <CardContent className='pt-6'>
               <h3 className='text-xl font-bold mb-2'>In Association With</h3>
               <ul className='space-y-2'>
@@ -99,7 +99,7 @@ export function Header() {
                 </li>
               </ul>
             </CardContent>
-          </Card>
+          </Card> */}
         </motion.div>
 
         {/* Right Column */}
@@ -124,7 +124,7 @@ export function Header() {
             height={50}
             className='object-contain'
           />
-          <div className='grid grid-cols-2 gap-6 justify-items-center'>
+          {/* <div className='grid grid-cols-2 gap-6 justify-items-center'>
             <Image
               src='/logos/uipath.png'
               alt='UiPath Logo'
@@ -146,7 +146,7 @@ export function Header() {
               height={50}
               className='object-contain'
             />
-          </div>
+          </div> */}
         </motion.div>
 
         {/* Instructions & Info Section */}
