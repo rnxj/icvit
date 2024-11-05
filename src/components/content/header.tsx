@@ -79,9 +79,9 @@ export function Header() {
             </CardContent>
           </Card>
 
-          {/* <Card>
+          <Card>
             <CardContent className='pt-6'>
-              <h3 className='text-xl font-bold mb-2'>In Association With</h3>
+              <h3 className='text-xl font-bold mb-2'>In Collaboration With</h3>
               <ul className='space-y-2'>
                 <li className='flex items-center gap-2'>
                   <span className='w-3 h-3 rounded-full bg-red-600'></span>
@@ -89,17 +89,9 @@ export function Header() {
                     Head for the School of Computing and IT, Taylor's University
                   </span>
                 </li>
-                <li className='flex items-center gap-2'>
-                  <span className='w-3 h-3 rounded-full bg-blue-600'></span>
-                  <span className='font-semibold'>Bureau of Indian Standards</span>
-                </li>
-                <li className='flex items-center gap-2'>
-                  <span className='w-3 h-3 rounded-full bg-orange-600'></span>
-                  <span className='font-semibold'>UiPath Academic Alliance</span>
-                </li>
               </ul>
             </CardContent>
-          </Card> */}
+          </Card>
         </motion.div>
 
         {/* Right Column */}

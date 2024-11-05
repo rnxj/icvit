@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
+import { MicVocalIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRef } from 'react';
@@ -23,14 +24,14 @@ interface AssociationPartner {
 }
 
 const associationPartners: AssociationPartner[] = [
-  // {
-  //   name: 'Universiti Putra Malaysia (UPM)',
-  //   description:
-  //     'UPM is the only university that leads in the field of agriculture, which is not limited to food crops, including animal husbandry, veterinary medicine, and forestry, in addition to exploring disciplines that are relevant to the needs of society and the country. Faculty of Computer Science and Information Technology is located next to the lake located at UPM\'s Main Gate. This faculty consists of four departments namely the Department of Computer Science, Department of Multimedia, Department of Software Engineering and Information System, and the Department of Communication Technology and Network. Faculty of Computer Science and Information Technology is the first faculty to introduce "Green IT".',
-  //   logoUrl: '/logos/upm.png',
-  //   logoAlt: 'UPM Logo',
-  //   readMoreLink: 'https://www.upm.edu.my/?L=en',
-  // },
+  {
+    name: "Taylor's University",
+    description:
+      'No. 1 Private University in Malaysia and Southeast Asia. We are ranked the top private university in Malaysia and Southeast Asia, placing us among the world’s top universities. This follows our achievement of being one of the few Asian universities rated 5 Stars for Online Learning, acknowledging the world-class education we provide for our students.',
+    logoUrl: '/logos/taylors.png',
+    logoAlt: 'Taylor Logo',
+    readMoreLink: 'https://www.taylor.edu.my/',
+  },
   // {
   //   name: 'Bureau of Indian Standards (BIS)',
   //   description:
@@ -313,26 +314,14 @@ export function About() {
       >
         <Card>
           <CardContent className='p-6'>
-            <div className='flex flex-col md:flex-row gap-6 items-center'>
-              <div className='md:w-2/3'>
-                <h2 className='text-3xl font-bold text-primary-700 mb-4'>Publishing & Indexing</h2>
-                <p className='mb-4 text-gray-700'>
-                  ICVIT&apos;25 proceedings are planned to be published with Springer in their
-                  Communications in Computer and Information Science series (final approval
-                  pending). All accepted and presented papers will be published by CCIS subject to
-                  meeting Springer&apos;s scope and quality requirements. Springer CCIS series is
-                  indexed in SCOPUS.
-                </p>
+            <div className='flex flex-col items-center space-y-4'>
+              <div className='w-24 h-24 bg-primary-100 rounded-full flex items-center justify-center'>
+                <MicVocalIcon />
               </div>
-              <div className='md:w-1/3 flex justify-center'>
-                <Image
-                  src='/logos/springer.png'
-                  alt='Springer Logo'
-                  width={200}
-                  height={200}
-                  className='object-contain'
-                />
-              </div>
+              <h2 className='text-3xl font-bold text-primary-700'>Publishing & Indexing</h2>
+              <p className='text-gray-500 text-center'>
+                Details about publishing and indexing will be updated soon. Please check back later.
+              </p>
             </div>
           </CardContent>
         </Card>

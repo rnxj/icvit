@@ -31,7 +31,7 @@ export function Submission() {
     {
       title: 'Contact Information',
       content:
-        'If you encounter any challenges during the submission process, our team is here to assist you. Please feel free to reach out to us via email at chennai.ICVIT@vit.ac.in. We are dedicated to providing timely support and resolving any issues you may face.',
+        'If you encounter any challenges during the submission process, our team is here to assist you. Please feel free to reach out to us via email at chennai.icvit@vit.ac.in. We are dedicated to providing timely support and resolving any issues you may face.',
     },
     {
       title: 'Peer Review and Plagiarism Check',

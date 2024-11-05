@@ -12,7 +12,7 @@ import { Submission } from '@/components/content/submission';
 
 export default function Home() {
   return (
-    <div className='bg-white p-8 max-w-7xl mx-auto mt-20'>
+    <div className='bg-white p-8 max-w-7xl mx-auto mt-20 text-justify'>
       <section id='header'>
         <Header />
       </section>
