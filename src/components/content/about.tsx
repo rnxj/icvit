@@ -27,7 +27,7 @@ const associationPartners: AssociationPartner[] = [
   {
     name: "Taylor's University",
     description:
-      'No. 1 Private University in Malaysia and Southeast Asia. We are ranked the top private university in Malaysia and Southeast Asia, placing us among the world’s top universities. This follows our achievement of being one of the few Asian universities rated 5 Stars for Online Learning, acknowledging the world-class education we provide for our students.',
+      "No. 1 Private University in Malaysia and Southeast Asia. We are ranked the top private university in Malaysia and Southeast Asia, placing us among the world's top universities. This follows our achievement of being one of the few Asian universities rated 5 Stars for Online Learning, acknowledging the world-class education we provide for our students.",
     logoUrl: '/logos/taylors.png',
     logoAlt: 'Taylor Logo',
     readMoreLink: 'https://www.taylor.edu.my/',
@@ -51,9 +51,10 @@ const associationPartners: AssociationPartner[] = [
 ];
 
 const conferenceObjectives = [
-  'To provide a platform for researchers, scholars, and innovators to present their latest findings and breakthroughs in the fields of computing and technology.',
-  'To facilitate discussions and sessions focused on emerging trends and technologies such as artificial intelligence, quantum computing, blockchain, internet of things (IoT), etc.',
-  'To explore innovative approaches in automation combined with intelligent methodologies, encompassing the latest advancements in computing.',
+  'To foster Global Collaboration and Knowledge Exchange by bringing together researchers, academicians, industry professionals, and policymakers from across the world to share insights, research findings, and technological advancements in the domain of intelligent technologies.',
+  'To showcase Advanced Research and Innovations by providing a premier platform for presenting original, high-impact research and pioneering innovations that address real-world challenges in computing and related fields.',
+  'To promote Sustainable and Ethical Technological Development that supports the United Nations Sustainable Development Goals (SDGs), with a focus on ethical, inclusive, and environmentally responsible applications of advanced technologies.',
+  'To bridge the Gap Between Academia and Industry, facilitating meaningful interactions between academic researchers and industry leaders, promoting the practical implementation and commercialization of research through collaborative initiatives.',
 ];
 
 const conferenceTracks = [
@@ -235,19 +236,41 @@ export function About() {
           </CardHeader>
           <CardContent>
             <p className='mb-4 text-gray-700'>
-              The aim of the International Conference on adVanced Intelligent Technologies (ICVIT
-              2025) is to serve as a platform for researchers, scholars, professionals, and industry
-              experts from around the world to come together and exchange ideas, advancements, and
-              insights in the fields of computing and technology.
+              The International Conference on adVanced Intelligent Technologies (ICVIT 2025), to be
+              held on September 18-19, 2025, at Vellore Institute of Technology (VIT), Chennai,
+              India, is a prestigious academic event designed to bring together leading researchers,
+              academicians, scientists, industry professionals, and policy makers from across the
+              globe. The conference aims to foster interdisciplinary dialogue and collaboration in
+              the realm of advanced computing and intelligent technologies.
             </p>
             <p className='mb-4 text-gray-700'>
-              The conference seeks to explore visionary concepts, breakthroughs, and innovations
-              that have the potential to revolutionize the way we approach computing and technology
-              in various domains. This includes but is not limited to areas such as artificial
-              intelligence, machine learning, data science, internet of things (IoT), robotics,
-              cyber-physical systems, quantum computing, augmented and virtual reality, and
-              sustainable technology solutions.
+              ICVIT 2025 aspires to serve as a dynamic platform for the dissemination of
+              cutting-edge research, emerging trends, and visionary innovations that are shaping the
+              future of technology. The event will facilitate the exchange of insights and
+              experiences among participants through keynote addresses, technical paper
+              presentations, panel discussions, and industry-academia interactions.
             </p>
+            <div className='mt-6'>
+              <h3 className='text-xl font-bold text-primary-700 mb-2'>Conference Theme</h3>
+              <p className='text-gray-700 italic border-l-4 border-primary-200 pl-4 py-2 bg-primary-50 rounded'>
+                "Fostering Technological Advancement through Innovations in Artificial Intelligence,
+                Internet of Things, Robotics, and Sustainable Solutions"
+              </p>
+            </div>
+            <div className='mt-6'>
+              <h3 className='text-xl font-bold text-primary-700 mb-2'>Topics of Interest</h3>
+              <ul className='list-disc pl-6 space-y-1 text-gray-700'>
+                <li>Artificial Intelligence and Machine Learning</li>
+                <li>Data Science and Big Data Analytics</li>
+                <li>Internet of Things (IoT) and Smart Systems</li>
+                <li>Robotics and Autonomous Systems</li>
+                <li>Cyber-Physical Systems and Embedded Computing</li>
+                <li>Quantum Computing and High-Performance Systems</li>
+                <li>Augmented Reality (AR) and Virtual Reality (VR)</li>
+                <li>Sustainable and Green Technologies</li>
+                <li>Human-Centric and Ethical AI Solutions</li>
+              </ul>
+            </div>
           </CardContent>
         </Card>
       </motion.section>

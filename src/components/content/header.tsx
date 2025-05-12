@@ -31,7 +31,7 @@ export function Header() {
           <div className='flex flex-wrap items-center gap-4'>
             <Badge variant='outline' className='flex items-center gap-2 text-lg py-2 px-4'>
               <Calendar className='text-blue-600' />
-              <span>14th & 15th February 2025</span>
+              <span>18th & 19th September 2025</span>
             </Badge>
             <Badge variant='outline' className='flex items-center gap-2 text-lg py-2 px-4'>
               <Clock className='text-blue-600' />
@@ -65,8 +65,8 @@ export function Header() {
           </h1>
 
           <h2 className='text-xl font-semibold text-gray-700'>
-            Theme: Advancing technology through innovations in AI, IoT, robotics, and sustainable
-            solutions.
+            Theme: Fostering Technological Advancement through Innovations in Artificial
+            Intelligence, Internet of Things, Robotics, and Sustainable Solutions
           </h2>
 
           <Card>

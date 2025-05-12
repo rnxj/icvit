@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -61,8 +62,14 @@ export function Navbar() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Link href='/' className='text-2xl font-bold text-primary-700 whitespace-nowrap'>
-                ICVIT&apos;25
+              <Link href='/' className='flex items-center'>
+                <Image
+                  src='/logo.png'
+                  alt='ICVIT 2025 Logo'
+                  width={120}
+                  height={40}
+                  className='h-10 w-auto'
+                />
               </Link>
             </motion.div>
             <div className='hidden lg:flex items-center space-x-1'>
@@ -111,12 +118,14 @@ export function Navbar() {
                       transition={{ duration: 0.5 }}
                       className='flex items-center justify-between mb-8'
                     >
-                      <Link
-                        href='/'
-                        className='text-2xl font-bold text-primary-700'
-                        onClick={() => setIsOpen(false)}
-                      >
-                        ICVIT&apos;25
+                      <Link href='/' className='flex items-center' onClick={() => setIsOpen(false)}>
+                        <Image
+                          src='/logo.png'
+                          alt='ICVIT 2025 Logo'
+                          width={120}
+                          height={40}
+                          className='h-10 w-auto'
+                        />
                       </Link>
                       <Button variant='ghost' size='icon' onClick={() => setIsOpen(false)}>
                         <X className='h-6 w-6' />

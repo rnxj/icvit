@@ -21,32 +21,32 @@ export function Submission() {
     {
       title: 'Submission Requirements',
       content:
-        "All submitted papers must be original and exclusive to ICVIT'25. Simultaneous submissions to other journals or conferences are strictly prohibited. To maintain the integrity of the conference, we expect all papers to be based on unpublished original work. By submitting a paper, at least one of the authors must be committed to registering and presenting the paper at the conference.",
+        "All submissions to ICVIT'25 must be original and not under consideration for publication elsewhere. Papers submitted to other conferences or journals simultaneously will not be accepted. To uphold the conference's integrity, we require that all papers be based on previously unpublished work. Additionally, at least one author of each accepted paper must register for and present the paper at the conference.",
     },
     {
       title: 'Important Dates',
       content:
-        'It is important to adhere to the provided deadlines. The deadlines for draft paper submission, notification of acceptance, camera-ready paper submission, and early registration can be found in the Important Dates section of the conference website. Keeping track of these dates will help ensure a smooth review process and successful participation.',
+        'Adherence to the specified deadlines is essential. Key dates for draft paper submission, notification of acceptance, camera-ready paper submission, and early registration are listed in the Important Dates section of the conference website. Observing these deadlines is crucial to facilitate a smooth review process and ensure successful participation in the conference.',
     },
     {
       title: 'Contact Information',
       content:
-        'If you encounter any challenges during the submission process, our team is here to assist you. Please feel free to reach out to us via email at chennai.icvit@vit.ac.in. We are dedicated to providing timely support and resolving any issues you may face.',
+        'If you encounter any difficulties during the submission process, please do not hesitate to contact us at chennai.icvit@vit.ac.in. Our team is committed to providing prompt assistance and ensuring that any issues are addressed efficiently.',
     },
     {
       title: 'Peer Review and Plagiarism Check',
       content:
-        'Quality and originality are paramount to us. Each submitted paper will undergo a thorough peer review by a minimum of three independent referees who are experts in the field. Additionally, all papers will undergo a comprehensive plagiarism check to ensure their authenticity and adherence to ethical standards.',
+        'We prioritize quality and originality, subjecting each submitted paper to a rigorous peer review by at least three independent field experts and a thorough plagiarism check to confirm authenticity and ethical compliance. Any instance of plagiarism will result in immediate rejection at any review stage.',
     },
     {
       title: 'Accepted Papers',
       content:
-        'Upon acceptance, authors will be required to complete and sign a copyright form. Furthermore, presenting the accepted paper at the conference is mandatory. This practice fosters an environment of knowledge sharing and scholarly interaction. To maintain the academic integrity of the conference, we employ standard plagiarism detection tools to scrutinize all submissions. Any instance of plagiarism will result in rejection, regardless of the stage of review.',
+        'Accepted authors must sign a copyright form and present their paper at the conference to promote knowledge sharing and scholarly engagement. To uphold academic integrity, all submissions undergo scrutiny using standard plagiarism detection tools, with any detected plagiarism leading to immediate rejection at any review stage.',
     },
     {
       title: 'Manuscript Guidelines',
       content:
-        'Submitted manuscripts should encompass a comprehensive and coherent body of work, presented in well-formatted English. Each manuscript should span a complete 6 pages, offering adequate space to delve into the details of the research. All submissions are to be made electronically through the designated platform, ensuring efficient processing and review.',
+        'Manuscripts must present a thorough and cohesive body of work in well-formatted English, spanning exactly 6 pages to fully explore the research details. All submissions should be made electronically via the designated platform for streamlined processing and review.',
     },
   ];
 
@@ -75,6 +75,85 @@ export function Submission() {
         ))}
       </Accordion>
 
+      <Card>
+        <CardHeader>
+          <CardTitle className='text-2xl font-bold text-primary-700'>
+            Author Guidelines for Conference Paper Submission
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className='space-y-4 list-decimal pl-5'>
+            <li className='text-gray-700'>
+              <span className='font-semibold'>Manuscript Preparation</span>
+              <ul className='list-disc pl-5 mt-1 space-y-1'>
+                <li>
+                  Submissions must represent a comprehensive and cohesive body of research, written
+                  in clear, well-formatted English.
+                </li>
+                <li>
+                  Each manuscript should be exactly 6 pages in length, providing sufficient space to
+                  elaborate on research details.
+                </li>
+                <li>
+                  Ensure the manuscript adheres to the conference's formatting requirements (refer
+                  to the templates available below).
+                </li>
+              </ul>
+            </li>
+            <li className='text-gray-700'>
+              <span className='font-semibold'>Submission Process</span>
+              <ul className='list-disc pl-5 mt-1 space-y-1'>
+                <li>
+                  All manuscripts must be submitted electronically through the designated CMT
+                  platform to facilitate efficient processing and review.
+                </li>
+                <li>Submissions sent via other methods will not be accepted.</li>
+              </ul>
+            </li>
+            <li className='text-gray-700'>
+              <span className='font-semibold'>Peer Review and Plagiarism Check</span>
+              <ul className='list-disc pl-5 mt-1 space-y-1'>
+                <li>
+                  Each submitted paper will undergo a rigorous peer review by at least three
+                  independent experts in the field to ensure quality and originality.
+                </li>
+                <li>
+                  All submissions will be subject to a comprehensive plagiarism check using standard
+                  detection tools to verify authenticity and adherence to ethical standards.
+                </li>
+                <li>
+                  Any instance of plagiarism will result in immediate rejection, regardless of the
+                  review stage.
+                </li>
+              </ul>
+            </li>
+            <li className='text-gray-700'>
+              <span className='font-semibold'>Post-Acceptance Requirements</span>
+              <ul className='list-disc pl-5 mt-1 space-y-1'>
+                <li>Upon acceptance, authors must complete and sign a copyright form.</li>
+                <li>
+                  Authors are required to present their accepted paper at the conference to foster
+                  knowledge sharing and scholarly interaction.
+                </li>
+              </ul>
+            </li>
+            <li className='text-gray-700'>
+              <span className='font-semibold'>Commitment to Academic Integrity</span>
+              <ul className='list-disc pl-5 mt-1 space-y-1'>
+                <li>
+                  The conference upholds the highest standards of academic integrity. Submissions
+                  must be original and not previously published or under consideration elsewhere.
+                </li>
+                <li>
+                  Failure to comply with these guidelines, including plagiarism or failure to
+                  present, will result in rejection or disqualification.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </CardContent>
+      </Card>
+
       <Card className='mt-8'>
         <CardHeader>
           <CardTitle className='text-2xl font-bold text-primary-700'>Submission Links</CardTitle>
@@ -83,8 +162,11 @@ export function Submission() {
           <div>
             <h3 className='text-xl font-bold text-primary-700 mb-2'>Manuscript Submission</h3>
             <Button asChild>
-              <Link href='#'>Submit Manuscript</Link>
+              <Link href='#'>Submit Manuscript (CMT)</Link>
             </Button>
+            <p className='mt-2 text-sm text-gray-500'>
+              All manuscripts must be submitted through the CMT platform.
+            </p>
           </div>
           <div>
             <h3 className='text-xl font-bold text-primary-700 mb-2'>Manuscript Templates</h3>
